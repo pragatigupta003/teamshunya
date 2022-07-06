@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* color: ; */
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav{
+    background: black;
+    position: sticky;
+}
+
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 90px;
+    padding-left: 100px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    margin: 50px auto 5px;
+    /* background: rgb(17, 17, 17); */
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    /* line-height: 32px; */
+    padding: 6px 12px;
+}
+
+nav ul li a:hover{
+    border-radius: 5px;
+    color: blue;
+    box-shadow: 0 0 3px rgb(34, 12, 233), 0 0 3px rgb(245, 245, 220);
+}
+
+nav a.icon{
+    display: none;
+}
+
+nav ul ul{
+    position: absolute;
+    background: black;
+    /* border-top: 2px solid blue; */
+    top: 90px;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: top .2s;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: auto;
+    float: none;
+    display: list-item;
+    /* border-bottom: 1px solid red; */
+}
+
+nav ul ul li a{
+    line-height: 40px;
+}
+
+nav ul ul li a:hover{
+    /* border-radius: 5px;
+    color: blue; */
+    box-shadow: none;
+}
+
+footer{
+    position:relative;
+    width: 100%;
+    margin-top: 100vh;
+    height: auto;
+    padding: 50px 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foot-cont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: row;
+}
+
+footer .foot-cont .sec{
+    margin-right: 10px;
+}
+
+footer .foot-cont .sec.general{
+    width: 30%;
+}
+
+footer .foot-cont .sec.general h2{
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.foot-icon{
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    width: 40%;
+}
+
+.foot-icon li{
+    list-style: none;
+}
+
+.foot-icon li a{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    /* background: ; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 14px;
+}
+
+.foot-cont span{
+    padding-left: 20px;
+}
+
+.foot-cont li a:hover{
+    background: blue;
+}
+
+.contact{
+    position: relative;
+    width: 30%;
+}
+
+.contact ul li{
+    list-style: none;
+}
+
+.contact ul li i{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .foot-cont .sec.contact h2{
+    position: relative;
+    font-weight: 400;
+}
+
+footer .foot-cont .sec.contact p{
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.contact span{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 950px){
+    .main-nav{
+        position: fixed;
+        right: -175px;
+        top: 60px;
+        height: 80vh;
+        display: block;
+        background-color: black;
+        width: 145px;
+        line-height: 10px;
+    }
+    nav ul li a:hover{
+        border-bottom: 1px solid blue;
+        color: blue;
+        box-shadow: none;
+    }
+    nav .logo{
+        padding-left: 50px;
+    }
+    nav a.icon{
+        float: right;
+        display: block;
+        margin-right: 30px;
+        line-height: 90px;
+        color: white;
+        font-size: 25px;
+    }
+    .main-nav.active{
+        right: -30px;
+    }
+}
+
+@media screen and (max-width: 825px){
+    footer{
+        padding: 40px;
+    }
+
+    footer .foot-cont{
+        flex-direction: column;
+    }
+
+    footer .foot-cont .sec{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    footer .foot-cont .sec.general, .contact{
+        width: 100%;
+    }
+
+    footer .foot-cont .sec.contact{
+        margin-bottom: 0px;
+    }
+}
