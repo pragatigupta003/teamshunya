@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+title{
+    color: green;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    background-image: url(./teamimage.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.bar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 5px;
+}
+
+.team-logo{
+    padding-left: 10px;
+}
+
+.nav-item{
+    padding-top: 30px;
+    padding-left: 2%;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.item-pack{
+    margin-right: 5%;
+    padding-left: 25%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    padding-left: 5%;
+    text-transform: uppercase;
+    font: message-box;
+    font-weight: bold;
+}
+
+.sus{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 23vh;
+    width: 100%;
+}
+
+.sus-logo{
+    width: fit-content;
+    padding-left: 40%;
+    padding-right: 2%;
+}
+
+.sus-about{
+    width: 48%;
+    padding-left: 2%;
+    float: left;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.participation{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: rgb(137, 246, 137);
+
+}
+
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width: 35%;
+    padding-left: 5%;
+    align-content: center;
+}
+
+.about-text{
+    padding: 3%;
+}
+
+.register{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.events-list{
+    margin-left: 5%;
+    margin-top: 3%;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    width: 250px;
+    height: 260px;
+}
+
+.events-list .reg-btn{
+    font: 300;
+    font-size: 20px;
+    font-weight: bold;
+    width: 180px;
+    margin-left: 35px;
+    margin-top: 40px;
+    line-height: 38px;
+    border-radius: 5px;
+}
+
+.events-list .ev-text{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+.prev-sus{
+    margin-top: 5%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer{
+    position:relative;
+    width: 90%;
+    margin-top: 20px;
+    height: auto;
+    padding: 5%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foot-cont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: row;
+}
+
+footer .foot-cont .sec{
+    margin-right: 10px;
+}
+
+footer .foot-cont .sec.general{
+    width: 30%;
+}
+
+footer .foot-cont .sec.general h2{
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.foot-icon{
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    width: 40%;
+}
+
+.foot-icon li{
+    list-style: none;
+}
+
+.foot-icon li a{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    /* background: ; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 14px;
+}
+
+.foot-cont span{
+    padding-left: 20px;
+}
+
+.foot-cont li a:hover{
+    background: blue;
+}
+
+.contact{
+    position: relative;
+    width: 30%;
+}
+
+.contact ul li{
+    list-style: none;
+}
+
+.contact ul li i{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .foot-cont .sec.contact h2{
+    position: relative;
+    font-weight: 400;
+}
+
+footer .foot-cont .sec.contact p{
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.contact span{
+    padding-left: 10px;
+}
